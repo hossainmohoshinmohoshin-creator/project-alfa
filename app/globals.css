@@ -1,0 +1,187 @@
+/* app/globals.css */
+
+/* ========= Reset / base ========= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    sans-serif;
+  background: radial-gradient(circle at top, #1b2845, #050713);
+  color: #f9fafb;
+}
+
+/* Smooth text */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Simple link default (Tailwind can override) */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========= LOGIN PAGE ========= */
+
+.voltrix-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.voltrix-login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(15, 23, 42, 0.98);
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+  padding: 2.25rem 2rem;
+  text-align: left;
+}
+
+/* Header */
+
+.voltrix-login-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.voltrix-login-super {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.voltrix-login-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.voltrix-login-subtitle {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Form */
+
+.voltrix-login-form {
+  margin-top: 1.75rem;
+}
+
+.voltrix-field-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+}
+
+.voltrix-input {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: #f9fafb;
+  font-size: 0.88rem;
+}
+
+.voltrix-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.55);
+}
+
+.voltrix-login-error {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #f97373;
+}
+
+/* Login button */
+
+.voltrix-login-button {
+  margin-top: 1.3rem;
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, #2563eb, #22d3ee);
+  color: white;
+  transition: transform 0.08s ease, box-shadow 0.08s ease,
+    filter 0.08s ease;
+}
+
+.voltrix-login-button:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.28);
+  transform: translateY(-1px);
+}
+
+.voltrix-login-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Footer */
+
+.voltrix-login-footer {
+  margin-top: 1.4rem;
+  font-size: 0.72rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* ========= OPTIONAL SHARED PAGE HELPERS ========= */
+/* You can use these or just Tailwind utilities on each page. */
+
+.voltrix-page-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 2.5rem;
+}
+
+.voltrix-page-header {
+  margin-bottom: 1.5rem;
+}
+
+.voltrix-page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.voltrix-page-subtitle {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.voltrix-page-card {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 1rem;
+  border: 1px solid rgba(30, 64, 175, 0.5);
+  padding: 1.5rem 1.4rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+}
